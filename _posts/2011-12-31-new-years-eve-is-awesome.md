@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
 # Day1: 암기왕 (이분탐색)
 
 **문제: 백준 2776번**
