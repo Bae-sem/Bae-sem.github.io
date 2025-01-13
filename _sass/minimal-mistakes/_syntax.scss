@@ -2,7 +2,16 @@
    Syntax highlighting
    ========================================================================== */
 
-div.highlighter-rouge,
+div.highlighter-rouge {
+  margin: 2em 0;        // 상하 여백
+  padding: 1em;         // 내부 여백
+  
+  @include breakpoint($large) {
+    width: 95%;         // 코드 블록 너비
+    margin-left: auto;
+    margin-right: auto;
+  }
+},
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
