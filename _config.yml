@@ -114,10 +114,10 @@ analytics:
 # Site Author
 author:
   name             : "Semin Bae"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : # "I am an **amazing** person."
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
   location         : "Seoul, Korea"
-  email            :
+  email            : "semin.bae.1999@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
