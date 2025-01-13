@@ -34,14 +34,7 @@ body {
 }
 
 .page {
-  padding-right: 20px;  // 오른쪽 여백
-  padding-left: 20px;   // 왼쪽 여백
-  margin-top: 2em;      // 상단 여백
-  
   @include breakpoint($large) {
-    width: 90%;         // 전체 너비를 줄임 (기본값은 100%)
-    padding-right: 50px;
-    padding-left: 50px;
     float: inline-end;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-inline-end: $right-sidebar-width-narrow;
