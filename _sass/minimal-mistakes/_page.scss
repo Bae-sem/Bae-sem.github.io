@@ -5,7 +5,7 @@
 #main {
   @include clearfix;
   margin-inline: auto;
-  padding-inline: 1em;
+  padding-inline: 2em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -47,7 +47,7 @@ body {
 
   .page__inner-wrap {
     float: inline-start;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-inline: 0;
     width: 100%;
     clear: both;
@@ -66,7 +66,7 @@ body {
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 1.4;
 
   a {
     color: $text-color;
@@ -87,34 +87,37 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+    margin-top: 2em;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			inset-inline-start: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h1, h2, h3, h4, h5, h6 {
+    margin: 2em 0 1em;
+    .header-link {
+      position: relative;
+      inset-inline-start: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
 
   p,
   li,
   dl {
     font-size: 1em;
+    line-height: 1.8;
   }
 
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
+    margin: 0 0 1.5em;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
@@ -135,17 +138,29 @@ body {
     }
   }
 
+  div.highlighter-rouge {
+    margin: 2em 0;
+    
+    pre.highlight {
+      padding: 1.5em;
+      border-radius: 4px;
+      background: $code-background-color;
+      font-family: "Source Code Pro", monospace;
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+  }
+
   :not(pre) > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    font-size: 0.8em;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9em;
     background: $code-background-color;
     border-radius: $border-radius;
 
     &::before,
     &::after {
       letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
+      content: "\00a0";
     }
   }
 
@@ -165,10 +180,23 @@ body {
     font-size: $type-size-6;
   }
 
-  /* blockquote citations */
-  blockquote + .small {
-    margin-top: -1.5em;
-    padding-inline-start: 1.25rem;
+  blockquote {
+    margin: 2em 1em;
+    padding: 1em 1.5em;
+    border-left: 0.25em solid #6f777d;
+    background-color: #f8f9fa;
+    font-style: italic;
+    
+    + .small {
+      margin-top: -1.5em;
+      padding-inline-start: 1.25rem;
+    }
+  }
+
+  img {
+    margin: 2em 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 }
 
