@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Semin Bae"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : #"/assets/images/bio-photo.jpg"
+  bio              : "👨‍💻 Building solutions with **simple** and **readable** code."
   location         : "Seoul, Korea"
   email            : "semin.bae.1999@gmail.com"
   links:
