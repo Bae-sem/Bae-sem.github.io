@@ -3,6 +3,20 @@
 search: false
 ---
 
+@import "minimal-mistakes";
+
+.page {
+  float: right;
+  width: 100%;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.page__content {
+  text-align: justify;
+  line-height: 1.8;
+}
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin

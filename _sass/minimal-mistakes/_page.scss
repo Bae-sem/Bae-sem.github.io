@@ -35,31 +35,36 @@ body {
 
 .page {
   @include breakpoint($large) {
-    float: inline-end;
+    float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-inline-end: $right-sidebar-width-narrow;
+    padding-right: $right-sidebar-width-narrow;
+    padding-left: 50px;  // 왼쪽 여백 추가
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-inline-end: $right-sidebar-width;
+    padding-right: $right-sidebar-width;
+    padding-left: 100px;  // 더 큰 화면에서의 왼쪽 여백
   }
 
   .page__inner-wrap {
-    float: inline-start;
+    float: left;
     margin-top: 1em;
-    margin-inline: 0;
-    width: 100%;
+    margin-left: 2em;  // 내용 왼쪽 여백
+    margin-right: 2em; // 내용 오른쪽 여백
+    width: 90%;       // 전체 너비를 90%로 조정
     clear: both;
 
     .page__content,
     .page__meta,
     .page__share {
       position: relative;
-      float: inline-start;
-      margin-inline: 0;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
       width: 100%;
       clear: both;
+      text-align: justify; // 텍스트 정렬 추가
     }
   }
 }
