@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "binarysearch"
+title: "개념 - 이진탐색"
 author_profile: true
-tags: [Coding, BinarySearch]
+tags: [BinarySearch]
 typora-root-url: ../
 ---
 # Binary Search (이진탐색)
